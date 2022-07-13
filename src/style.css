@@ -59,6 +59,7 @@ body {
 }
 
 .todo {
+  will-change: transform;
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
@@ -77,4 +78,26 @@ body {
   border: transparent;
   height: 30px;
   width: 100%;
+  cursor: pointer;
+}
+
+.draggable {
+  cursor: move;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
 }
