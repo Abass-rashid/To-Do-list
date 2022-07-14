@@ -1,6 +1,5 @@
-/*eslint-disable*/
 import { save, load, compare } from './data.js';
-/* eslint-enable */
+
 const theBigList = document.querySelector('.todos');
 
 function getDragAfterElement(tdle, y) {

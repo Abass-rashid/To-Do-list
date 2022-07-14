@@ -1,5 +1,4 @@
-/*eslint-disable*/
-export function updateStatus(event) {
+export default function updateStatus(event) {
   event.target.nextElementSibling.classList.toggle('completed');
   const status = JSON.parse(localStorage.getItem('information'));
   if (status[event.target.parentNode.parentNode.id].completed === true) {
@@ -9,4 +8,3 @@ export function updateStatus(event) {
   }
   localStorage.setItem('information', JSON.stringify(status));
 }
-/* eslint-enable */

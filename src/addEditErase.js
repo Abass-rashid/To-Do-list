@@ -1,6 +1,5 @@
-/*eslint-disable*/
 import { save, load } from './data.js';
-/* eslint-enable */
+
 const theBigList = document.querySelector('.todos');
 
 export function antiShowAll(element) {

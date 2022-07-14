@@ -1,13 +1,10 @@
-/*eslint-disable*/
-import _ from 'lodash';
-import {updateStatus} from './status.js';
+import updateStatus from './status.js';
 import './style.css';
-import { todo, load } from './data.js';
+import { load } from './data.js';
 import { makeContainer, makeDrageable } from './dragDrop';
 import {
   addActivity, antiShowAll, elimanateCompleteds, saveone, removeone,
 } from './addEditErase.js';
-/* eslint-enable */
 
 let todolist = [];
 if (localStorage.getItem('information') === null) {
@@ -26,9 +23,8 @@ class TODOs {
     return this.todo;
   }
 }
-/* eslint-disable */
+
 const todos = new TODOs();
-/* eslint-enable */
 
 const todoDiv = document.querySelector('.todos');
 makeContainer(todoDiv);
