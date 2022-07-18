@@ -13,7 +13,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://abass-rashid.github.io/To-Do-list/)
+[Live Demo Link](https://abass-rashid.github.io/To-Do-list/dist/)
 
 ## Getting Started
 
