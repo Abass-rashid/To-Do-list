@@ -6,7 +6,7 @@ import {
   addActivity, antiShowAll, elimanateCompleteds, saveone, removeone,
 } from './addEditErase.js';
 
-let todolist = [];
+export let todolist = [];
 if (localStorage.getItem('information') === null) {
   localStorage.setItem('information', '[]');
 }

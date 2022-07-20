@@ -46,7 +46,7 @@ export function elimanateOne(element) {
 export function saveone(element) {
   const todolist = load();
   const index = element.parentNode.parentNode.id;
-  todolist[index].description = element.value;
+  todolist[index].description = element.value; 
   save(todolist);
   return todolist;
 }

@@ -4,8 +4,10 @@
 import {
   addActivity,
   removeone,
-  saveone,
-} from '../src/addEditErase.js';
+} 
+
+from '../src/addEditErase.js';
+import todolist from '../src/index.js';
 
 document.body.innerHTML = '<ul class="todos"></ul>';
 
@@ -20,19 +22,19 @@ describe('By adding item in todos', () => {
     expect(typeof addActivity).toBe('function');
   });
   test('test if new item added', () => {
-    expect(saveone.length).not.toBe(0);
+    expect(todolist.length).not.toBe(0);
   });
 });
 
 // Tests for Removing item in todo list
 describe('By removing item in todos', () => {
   // Act
-  removeone(saveone.length);
+  removeone(todolist.length);
   // Assert
   test('check if removeItem is a function', () => {
     expect(typeof removeone).toBe('function');
   });
   test('test if item removed from array', () => {
-    expect(saveone.length).toBe(2);
+    expect(todolist.length).toBe(2);
   });
 });
