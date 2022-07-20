@@ -8,7 +8,7 @@ export function antiShowAll(element) {
   }
 }
 
-export function elimanateCompleteds() {
+export function eliminateCompleteds() {
   const actualtodo = load();
   const result = actualtodo.filter((activity) => (activity.completed === false));
   for (let i = 0; i < result.length; i += 1) {
